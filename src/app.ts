@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { Server } from "./presentation/server";
 
 
@@ -7,5 +8,6 @@ import { Server } from "./presentation/server";
 
 function main() {
     
-    Server.start();
+    // Server.start();
+    console.log({email:process.env.MAILER_EMAIL});
 }
